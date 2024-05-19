@@ -39,22 +39,25 @@ Here’s a step-by-step guide on how to set up Jenkins on your local machine:
    ```bash
    sudo apt update
    sudo apt install openjdk-11-jdk
+   ```
 
 2. Add Jenkins Repository: Add the Jenkins Debian repository to your system.
     ```bash
     wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
     sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-
+    ```
 
 3. Install Jenkins: Update your package index and install Jenkins.
     ```bash
     sudo apt update
     sudo apt install jenkins
+    ```
 
 4. Start Jenkins: Start the Jenkins service.
     ```bash
     sudo systemctl start jenkins
     sudo systemctl enable jenkins
+    ```
 
 5. Access Jenkins: Open your web browser and navigate to http://localhost:8080. You’ll see the Jenkins setup screen. Follow the on-screen instructions to complete the setup.
 
@@ -62,6 +65,7 @@ Here’s a step-by-step guide on how to set up Jenkins on your local machine:
 Once Jenkins is up and running, you’ll need to unlock it with the initial admin password. This password can be found in the following file:
     ```bash
     sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+    ```
 
 Copy the password and paste it into the setup screen to unlock Jenkins. From there, you can install recommended plugins and create your first admin user.
 
