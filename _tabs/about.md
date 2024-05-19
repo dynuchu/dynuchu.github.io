@@ -1,10 +1,9 @@
 ---
 # the default layout is 'page'
-icon: fas fa-info-circle
+#icon: fas fa-info-circle
 order: 4
 ---
 
-```markdown
 # About Me
 
 Hi, I'm Agnes Bosskay, and welcome to my blog! 
